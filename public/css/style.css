@@ -194,3 +194,32 @@ body.dark-mode {
 	width: 100vw;
 	display: block;
 }
+
+.typing {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #3F403F;
+	border-top: none;
+  }
+  
+  .typing-effect {
+	width: 96.5%;
+	animation: typing 2s steps(28);
+	white-space: nowrap;
+	overflow: hidden;
+	
+	
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0;
+	}
+  }
+	  
+  @keyframes effect {
+	50% {
+	  border-color: transparent;
+	}
+  }

@@ -206,6 +206,11 @@ async function initMap() {
 					})
 					.then((res) => {
 						displayedStations.forEach((station) => {
+							map.getBounds()
+							.contains(station.marker.getPosition()).then(res => console.log(`============= ${res}`);)
+							
+
+
 							if (
 								!map
 									.getBounds()
